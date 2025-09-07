@@ -1,6 +1,6 @@
 import java.util.*;
 
-class LinkedHashSetEx6
+class LinkedHashSetEx9
 {
 	public static void main(String[] args) {
 		LinkedHashSet<Integer> set=new LinkedHashSet<>();
@@ -8,15 +8,12 @@ class LinkedHashSetEx6
 		set.add(20);
 		set.add(30);
 		set.add(40);
-		set.add(50);
-		set.add(60);
 
-		System.out.println(set);
+		System.out.println("set : "+set);
 
-		System.out.println(set.contains(30));
+		ArrayList<Integer> list=new ArrayList<>(set);
 
-		System.out.println(set.contains(300)); 
-
+		System.out.println("list : "+list);
 
 		
 	}
