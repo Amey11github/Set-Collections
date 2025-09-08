@@ -1,4 +1,6 @@
-class TreeSet
+import java.util.*;
+
+class TreeSetEx2
 {
 	public static void main(String[] args) {
 		TreeSet<Integer> set=new TreeSet<>();
@@ -16,8 +18,9 @@ class TreeSet
 		System.out.println(" isEmpty() : "+set.isEmpty());
 
 		System.out.println(" remove(20) : "+set.remove(20));
+		System.out.println("after remove(20) : "+set);
 
-		Collection<Integer> coll1=new ArrayList<>();
+		ArrayList<Integer> coll1=new ArrayList<>();
 		coll1.add(60);
 		coll1.add(70);
 		coll1.add(80);
@@ -25,10 +28,10 @@ class TreeSet
 
 		System.out.println("coll1 : "+coll1);
 
+		System.out.println(" addAll(coll1) : "+set.addAll(coll1));
+		System.out.println(set);
 
-		System.out.println(" addAll(coll1) : "set.addAll(coll1));
-
-		System.out.println();
-
+		System.out.println(set.subSet(30,60));
+		
 	}
 }
